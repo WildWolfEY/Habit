@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 import ru.myhabit.spring.config.RootConfig;
-import ru.myhabit.spring.config.WebAppConfig;
+import ru.myhabit.spring.config.WebConfig;
 
 @Configuration
 @EnableWebMvc
@@ -18,7 +18,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] {WebAppConfig.class};
+        return new Class[] {WebConfig.class};
     }
 
     @Override
