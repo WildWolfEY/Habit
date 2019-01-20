@@ -4,6 +4,7 @@ body {
     font-family: Helvetica;
 }
 input{
+    width: 250px;
     border-radius: 5px;
     padding: 8px 14px;
     margin-bottom: 10px;
@@ -11,7 +12,20 @@ input{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 input.no_active{
-    color: darkgray;
+    color: silver;
+    font-style: italic;
+}
+input.active{
+    color: black;
+    font-style: normal;
+}
+select.edit{
+    width: 250px;
+    border-radius: 5px;
+    padding: 8px 14px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 .box {
     background: #fff;
@@ -56,4 +70,12 @@ input.no_active{
 .left{
     text-align: left;
     margin-bottom: 10px;
+}
+.selectedRow td{
+    background-color: #0084ff;
+    color: #fff;
+}
+.hide_object
+{
+    display: none;
 }

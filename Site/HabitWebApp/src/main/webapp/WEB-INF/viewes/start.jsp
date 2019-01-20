@@ -3,10 +3,6 @@
 <c:url value="/resources/css/style.css" var="cssUrl"/>
 <link rel="stylesheet" type="text/css" href="${cssUrl}"/>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-
 <script type="text/javascript" src="/resources/js/start.js"></script>
 
 <html>
@@ -21,7 +17,7 @@
 
     <div class="box">
         <p>Привычки</p>
-        <a class="button" href="habit_manager">GO</a>
+        <a class="button" href="area_habit_manager">GO</a>
     </div>
 
     <div class="box">

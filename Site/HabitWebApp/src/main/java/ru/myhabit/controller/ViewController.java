@@ -13,6 +13,18 @@ public class ViewController {
     }
     @RequestMapping(value = "/user_manager", method = RequestMethod.GET)
     public String getUserManagerPage(){
-        return "user_manager";
+        return "manager/user_manager";
+    }
+    @RequestMapping(value = "/habit_manager", method = RequestMethod.GET)
+    public String getHabitManagerPage(){
+        return "manager/habit_manager";
+    }
+    @RequestMapping(value = "/area_manager", method = RequestMethod.GET)
+    public String getAreaManagerPage(){
+        return "manager/area_manager";
+    }
+    @RequestMapping(value = "/area_habit_manager", method = RequestMethod.GET)
+    public String getAreaHabitManagerPage(){
+        return "manager/area_habit_manager";
     }
 }

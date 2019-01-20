@@ -10,7 +10,6 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import ru.myhabit.controller.Cat;
 
 import javax.sql.DataSource;
 
@@ -63,12 +62,5 @@ public class RootConfig implements WebMvcConfigurer {
         transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
 
         return transactionManager;
-    }
-    @Bean
-    @Qualifier("dd")
-
-    Cat dd()
-    {
-        return new Cat();
     }
 }
